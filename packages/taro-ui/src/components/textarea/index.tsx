@@ -68,7 +68,8 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
       selectionEnd,
       fixed,
       textOverflowForbidden = true,
-      height
+      height,
+      name
     } = this.props
 
     const _maxLength = parseInt(maxLength.toString())
@@ -102,6 +103,7 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
           selectionStart={selectionStart}
           selectionEnd={selectionEnd}
           fixed={fixed}
+          name={name}
           onInput={this.handleInput}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
